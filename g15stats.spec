@@ -1,8 +1,8 @@
 Name:                   g15stats
-Version:                1.0
-Release:                %mkrel 4
+Version:                1.9.2
+Release:                %mkrel 1
 Summary:                CPU/Memory/Swap usage meter for G15Daemon
-License:                GPL
+License:                GPLv2+
 Group:                  System/Configuration/Hardware
 URL:                    http://g15daemon.sourceforge.net/
 Source0:                http://downloads.sourceforge.net/g15daemon/g15stats-%{version}.tar.bz2
@@ -36,7 +36,8 @@ Network Screen displays Total bytes In/Out, history graph, Peak speed.
 %setup -q
 
 %build
-%{configure2_5x}
+./autogen.sh
+%{configure}
 %{make}
 
 %install
