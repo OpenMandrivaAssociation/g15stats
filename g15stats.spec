@@ -1,6 +1,6 @@
 Name:                   g15stats
 Version:                1.9.2
-Release:                %mkrel 1
+Release:                %mkrel 2
 Summary:                CPU/Memory/Swap usage meter for G15Daemon
 License:                GPLv2+
 Group:                  System/Configuration/Hardware
