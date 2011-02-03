@@ -1,6 +1,6 @@
 Name:                   g15stats
 Version:                1.9.2
-Release:                %mkrel 2
+Release:                %mkrel 3
 Summary:                CPU/Memory/Swap usage meter for G15Daemon
 License:                GPLv2+
 Group:                  System/Configuration/Hardware
@@ -10,8 +10,6 @@ BuildRequires:          g15-devel
 BuildRequires:          g15daemon_client-devel
 BuildRequires:          g15render-devel
 BuildRequires:          libgtop2.0-devel
-BuildRequires:          X11-devel
-BuildRequires:          x11-proto-devel
 BuildRoot:              %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
@@ -37,7 +35,7 @@ Network Screen displays Total bytes In/Out, history graph, Peak speed.
 
 %build
 ./autogen.sh
-%{configure}
+%{configure2_5x}
 %{make}
 
 %install
