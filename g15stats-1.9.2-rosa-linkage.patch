@@ -1,0 +1,13 @@
+Index: g15stats-1.9.2/Makefile.am
+===================================================================
+--- g15stats-1.9.2.orig/Makefile.am
++++ g15stats-1.9.2/Makefile.am
+@@ -7,7 +7,7 @@ noinst_HEADERS = g15stats.h
+ docdir = $(prefix)/share/doc/$(PACKAGE)-$(VERSION)
+ doc_DATA = README ChangeLog AUTHORS NEWS COPYING
+ 
+-LIBS = -lg15daemon_client -lg15render 
++LIBS = -lg15daemon_client -lg15render -lpthread -lm
+ IMCLUDES = -I
+ g15stats_LDFLAGS = -avoid-version
+ g15stats_SOURCES =  g15stats.c g15stats.h
