@@ -4,7 +4,7 @@ Release:                5
 Summary:                CPU/Memory/Swap usage meter for G15Daemon
 License:                GPLv2+
 Group:                  System/Configuration/Hardware
-URL:                    http://g15daemon.sourceforge.net/
+URL:                    https://g15daemon.sourceforge.net/
 Source0:                http://downloads.sourceforge.net/g15daemon/g15stats-%{version}.tar.bz2
 Patch0:                 g15stats-1.9.2-rosa-linkage.patch
 BuildRequires:          g15-devel
